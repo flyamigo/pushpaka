@@ -85,6 +85,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#considerations-for-designing-an-architecture" class="nav-link">Considerations for designing an architecture</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#utm-architecture" class="nav-link">UTM Architecture</a>
               <ul class="nav flex-column">
               </ul>
@@ -105,18 +109,18 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="utm-policy">UTM Policy</h1>
+<p>Status: <code>WORKING DRAFT</code></p>
 <p><strong>Outline</strong>  </p>
 <div class="toc">
 <ul>
 <li><a href="#utm-policy">UTM Policy</a><ul>
 <li><a href="#actors">Actors</a></li>
 <li><a href="#use-cases">Use cases</a><ul>
-<li><a href="#uas-manufacturer">UAS Manufacturer</a></li>
+<li><a href="#manufacturer">Manufacturer</a></li>
 <li><a href="#pilot">Pilot</a></li>
 <li><a href="#operator">Operator</a></li>
 <li><a href="#insurer">Insurer</a></li>
 <li><a href="#civil-aviation-authority">Civil Aviation Authority</a></li>
-<li><a href="#third-party">Third party</a></li>
 <li><a href="#service-consumer">Service Consumer</a></li>
 <li><a href="#uas-owner">UAS Owner</a></li>
 <li><a href="#law-enforcement">Law Enforcement</a></li>
@@ -127,7 +131,23 @@
 <li><a href="#general-public">General Public</a></li>
 </ul>
 </li>
-<li><a href="#foreword-to-architecture">Foreword to Architecture</a></li>
+<li><a href="#foreword-to-architecture">Foreword to Architecture</a><ul>
+<li><a href="#state-of-the-art">State of the art</a><ul>
+<li><a href="#european-union-aviation-safety-agency">European Union Aviation Safety Agency</a><ul>
+<li><a href="#u-space-specifications">U-Space Specifications</a></li>
+</ul>
+</li>
+<li><a href="#federal-aviation-authority">Federal Aviation Authority</a><ul>
+<li><a href="#utm-specification-v1">UTM Specification v1</a></li>
+<li><a href="#utm-specification-v2">UTM Specification v2</a></li>
+<li><a href="#unmanned-aerial-mobility-specification-v1">Unmanned Aerial Mobility Specification v1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#considerations-for-designing-an-architecture">Considerations for designing an architecture</a></li>
 <li><a href="#utm-architecture">UTM Architecture</a><ul>
 <li><a href="#services">Services</a><ul>
 <li><a href="#registration">Registration</a></li>
@@ -151,40 +171,115 @@
 </div>
 <h2 id="actors">Actors</h2>
 <ol>
-<li>UAS Manufacturer</li>
+<li>Manufacturer</li>
 <li>Pilot</li>
 <li>Operator</li>
 <li>Insurer</li>
-<li>Civil Aviation Authority, i.e. DGCA</li>
-<li>Third party</li>
+<li>Civil Aviation Authority</li>
 <li>Service Consumer</li>
 <li>UAS Owner</li>
 <li>Law Enforcement</li>
 <li>Security Agencies</li>
-<li>Air Navigation Service Provider, i.e. AAI</li>
-<li>Military, i.e. IAF, Navy, Coast Guard, HAL</li>
+<li>Air Navigation Service Provider</li>
+<li>Disaster Management Agencies</li>
+<li>Military</li>
 <li>BCAS</li>
 <li>General Public</li>
 </ol>
 <h2 id="use-cases">Use cases</h2>
-<h3 id="uas-manufacturer">UAS Manufacturer</h3>
+<h3 id="manufacturer">Manufacturer</h3>
+<ol>
+<li>Manage Registration with CAA</li>
+</ol>
 <h3 id="pilot">Pilot</h3>
+<ol>
+<li>Manage Registration with CAA</li>
+<li>Plan a Flight</li>
+<li>Apply for Flight Permit</li>
+</ol>
 <h3 id="operator">Operator</h3>
+<ol>
+<li>Manage Registration with CAA</li>
+<li>Manage Pilots</li>
+<li>Manage UASs</li>
+</ol>
 <h3 id="insurer">Insurer</h3>
+<ol>
+<li>Accident Investigations</li>
+</ol>
 <h3 id="civil-aviation-authority">Civil Aviation Authority</h3>
 <p>i.e. DGCA</p>
-<h3 id="third-party">Third party</h3>
+<ol>
+<li>Audit<ol>
+<li>Pilot</li>
+<li>Operator</li>
+</ol>
+</li>
+<li>Manage registration<ol>
+<li>Manufacturer</li>
+<li>Pilot</li>
+<li>Operator</li>
+</ol>
+</li>
+</ol>
 <h3 id="service-consumer">Service Consumer</h3>
+<ol>
+<li>Data access</li>
+</ol>
 <h3 id="uas-owner">UAS Owner</h3>
+<ol>
+<li>Lease</li>
+<li>Rent</li>
+<li>Transfer</li>
+<li>Buy</li>
+<li>Scrap</li>
+</ol>
 <h3 id="law-enforcement">Law Enforcement</h3>
+<ol>
+<li>Find Pilot/Operator against FIR</li>
+<li>Track UAS</li>
+<li>Find rogue UAS</li>
+<li>Counter UAS action</li>
+</ol>
 <h3 id="security-agencies">Security Agencies</h3>
+<ol>
+<li>Find Pilot/Operator against FIR</li>
+<li>Track UAS</li>
+<li>Find rogue UAS</li>
+<li>Counter UAS action</li>
+</ol>
 <h3 id="air-navigation-service-provider">Air Navigation Service Provider</h3>
 <p>i.e. AAI</p>
+<ol>
+<li>Flight permission in controlled airspace</li>
+<li>Traffic Management<ol>
+<li>Deconfliction</li>
+</ol>
+</li>
+</ol>
 <h3 id="military">Military</h3>
 <p>i.e. IAF, Navy, Coast Guard, HAL</p>
+<ol>
+<li>Permission in applicable military controlled airspace</li>
+</ol>
 <h3 id="bcas">BCAS</h3>
+<ol>
+<li>Counter UAS action</li>
+</ol>
 <h3 id="general-public">General Public</h3>
+<ol>
+<li>Legal action against Drone Pilot/Operator</li>
+<li>Raise claim against accident</li>
+</ol>
 <h2 id="foreword-to-architecture">Foreword to Architecture</h2>
+<h3 id="state-of-the-art">State of the art</h3>
+<h4 id="european-union-aviation-safety-agency">European Union Aviation Safety Agency</h4>
+<h5 id="u-space-specifications">U-Space Specifications</h5>
+<h4 id="federal-aviation-authority">Federal Aviation Authority</h4>
+<h5 id="utm-specification-v1">UTM Specification v1</h5>
+<h5 id="utm-specification-v2">UTM Specification v2</h5>
+<h5 id="unmanned-aerial-mobility-specification-v1">Unmanned Aerial Mobility Specification v1</h5>
+<h2 id="considerations-for-designing-an-architecture">Considerations for designing an architecture</h2>
 <h2 id="utm-architecture">UTM Architecture</h2>
 <h3 id="services">Services</h3>
 <h4 id="registration">Registration</h4>
