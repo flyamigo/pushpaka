@@ -73,15 +73,19 @@
             
             <li class="nav-item" data-level="1"><a href="#i05-utm-policy" class="nav-link">I05 UTM Policy</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#state-of-the-art" class="nav-link">State of the art</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#actors" class="nav-link">Actors</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#use-cases" class="nav-link">Use cases</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#foreword-to-architecture" class="nav-link">Foreword to Architecture</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -105,29 +109,13 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="i05-utm-policy"><code>I05</code> UTM Policy</h1>
-<p>Status: <code>WORKING DRAFT</code></p>
+<p>Status: <code>WORKING DRAFT</code><br />
+<a href="mailto:sayandeep@deepcyan.ai?subject=Pushpaka I05 UTM Policy Comments">Please send in your comments</a>.</p>
 <p><strong>Outline</strong>  </p>
 <div class="toc">
 <ul>
 <li><a href="#i05-utm-policy">I05 UTM Policy</a><ul>
-<li><a href="#actors">Actors</a></li>
-<li><a href="#use-cases">Use cases</a><ul>
-<li><a href="#manufacturer">Manufacturer</a></li>
-<li><a href="#pilot">Pilot</a></li>
-<li><a href="#operator">Operator</a></li>
-<li><a href="#insurer">Insurer</a></li>
-<li><a href="#civil-aviation-authority">Civil Aviation Authority</a></li>
-<li><a href="#service-consumer">Service Consumer</a></li>
-<li><a href="#uas-owner">UAS Owner</a></li>
-<li><a href="#law-enforcement">Law Enforcement</a></li>
-<li><a href="#security-agencies">Security Agencies</a></li>
-<li><a href="#air-navigation-service-provider">Air Navigation Service Provider</a></li>
-<li><a href="#military">Military</a></li>
-<li><a href="#bcas">BCAS</a></li>
-<li><a href="#general-public">General Public</a></li>
-</ul>
-</li>
-<li><a href="#foreword-to-architecture">Foreword to Architecture</a><ul>
+<li><a href="#introduction">Introduction</a></li>
 <li><a href="#state-of-the-art">State of the art</a><ul>
 <li><a href="#gutma">GUTMA</a></li>
 <li><a href="#european-union-aviation-safety-agency">European Union Aviation Safety Agency</a><ul>
@@ -140,8 +128,25 @@
 <li><a href="#unmanned-aerial-mobility-specification-v1">Unmanned Aerial Mobility Specification v1</a></li>
 </ul>
 </li>
+<li><a href="#india">India</a></li>
 </ul>
 </li>
+<li><a href="#actors">Actors</a></li>
+<li><a href="#use-cases">Use cases</a><ul>
+<li><a href="#manufacturer">Manufacturer</a></li>
+<li><a href="#pilot">Pilot</a></li>
+<li><a href="#operator">Operator</a></li>
+<li><a href="#insurer">Insurer</a></li>
+<li><a href="#civil-aviation-authority">Civil Aviation Authority</a></li>
+<li><a href="#data-consumer">Data Consumer</a></li>
+<li><a href="#uas-ownership-etc">UAS Ownership, etc.</a></li>
+<li><a href="#law-enforcement">Law Enforcement</a></li>
+<li><a href="#security-agencies">Security Agencies</a></li>
+<li><a href="#air-navigation-service-provider">Air Navigation Service Provider</a></li>
+<li><a href="#military">Military</a></li>
+<li><a href="#bcas">BCAS</a></li>
+<li><a href="#general-public">General Public</a></li>
+<li><a href="#governmentsemi-governmental-bodies">Government/Semi-Governmental Bodies</a></li>
 </ul>
 </li>
 <li><a href="#utm-architecture">UTM Architecture</a><ul>
@@ -166,6 +171,71 @@
 </li>
 </ul>
 </div>
+<h2 id="introduction">Introduction</h2>
+<h2 id="state-of-the-art">State of the art</h2>
+<h3 id="gutma">GUTMA</h3>
+<h3 id="european-union-aviation-safety-agency">European Union Aviation Safety Agency</h3>
+<h4 id="u-space-specifications">U-Space Specifications</h4>
+<h3 id="federal-aviation-authority">Federal Aviation Authority</h3>
+<h4 id="utm-specification-v1">UTM Specification v1</h4>
+<h4 id="utm-specification-v2">UTM Specification v2</h4>
+<h4 id="unmanned-aerial-mobility-specification-v1">Unmanned Aerial Mobility Specification v1</h4>
+<h3 id="india">India</h3>
+<p>In November 2020, the MoCA published a <a href="../../ref/draft-utm-policy/">National UTM Policy Discussion Draft</a>. It describes a fairly comprehensive traffic management ecosystem and details the stakeholders, components, services provided by UTMSPs and DigitalSky at a high level. The <a href="../../ref/draft-utm-policy/#utm-architecture">Architecture</a> is clearly inspired by the JARUS UTM architecture <a href="../../bibliography/#NASA-UTM-1"><code>NASA-UTM-1</code></a>. The section on <a href="../../ref/draft-utm-policy/#real-time-identification-and-tracking-of-uas">Identification and Tracking of UAS</a> seems to be inspired by ASTM Remote ID standard <a href="../../bibliography/#ASTM-F3411-19"><code>ASTM-F3411-19</code></a>. For Risk Assessment of unmanned operations, the ICAO Safety Management System <a href="../../bibliography/#ICAO-Annex19"><code>ICAO-Annex19</code></a> The draft also discusses <a href="../../ref/draft-utm-policy/#utm-operational-scenarios">eleven operational scenarios</a> modelled on SORA standard scenarios (see <a href="../../bibliography/#JARUS-SORA"><code>JARUS-SORA</code></a>, <a href="../../bibliography/#JARUS-SORA-STS01"><code>JARUS-SORA-STS01</code></a>, <a href="../../bibliography/#JARUS-SORA-STS02"><code>JARUS-SORA-STS02</code></a>), although not as well defined from a risk assessment point-of-view. The scenarios seem to be geared towards enabling particular business cases based on operational constraints that are too broad for actual standardisation. The section on <a href="../../ref/draft-utm-policy/#airspace-classification-of-utm-airspace">Airspace classification for UTM operations</a> proposed three classes U1 through U3 where different combinations of flight rules, viz. Unmanned (<a href="../../nomenclature/#UFR"><code>UFR</code></a>), Visual (<a href="../../nomenclature/#VFR"><code>VFR</code></a>) and Instrumentation (<a href="../../nomenclature/#IFR"><code>IFR</code></a>) Flight Rules may apply. The draft also describes strategies for <a href="../../ref/draft-utm-policy/#utm-deployment-plan">UTM deployment</a> and models for <a href="../../ref/draft-utm-policy/#utm-service-charges">UTM monetisation</a>.</p>
+<p>While the discussion draft covers almost all the aspects of UTM policy making, several proposals seem unrealistic given the current socio-politic and economic conditions in India. A few of these issues are outlined below.</p>
+<ol>
+<li><strong>Roadmapping absent</strong><br />
+Establishing a complex ecosytem such as that for a UTM, with a large number of stakeholder types and participants, requires a well reasoned roadmap for development and operationalisation of government owned infrastructure. For instance such environments in the USA and EU have evolved organically over several years and with full-time active participation of regulators, industry, innovators and the academia. Bootstrapping an Indian UTM ecosystem development with knowhow from abroad will still require an adoption period.</li>
+<li><strong>Limited Technical knowhow</strong></li>
+<li><strong>Limited Market capacity</strong></li>
+<li><strong>Limited incentives for innovation</strong></li>
+<li><strong>Technical standards absent</strong><br />
+While a policy provides a birds-eye view of the development of a UTM ecosystem, it is ultimately technical standards and specifications that bring such a policy closer to reality. Unfortunately, while there are a lot of working and research groups with limited scopes all across India, their is a clear lack of effort on the development of such standards which can be easily adopted by the DGCA, QCI and AAI (as building blocks for the DigitalSky platform).</li>
+<li><strong>DigitalSky capabilities</strong><br />
+In the discussion draft, it has been proposed that DigitalSky support the entire spectrum of services that a UTM SP can or may provide. While this is a great goal to strive towards, such a monopolistic approach is often unrealistic particularly given the immense amount of innovation and research in the field of unmanned aviation. With new technologies emanating from the academia and the industry every so often, the burden to adopt these on a state-run infrastructure would be immense dooming it to repeat past failures. In addition, it would only deincentivise private and academic innovation in the UTM. It would be much more realistic to adopt a grounded approach, limiting the scope of DigitalSky to regulatory and interaction with government and other state-run bodies. It is notable that such an approach has has worked well in the EU and USA.</li>
+<li><strong>Key open issues</strong><ol>
+<li>Remote ID &amp; Tracking<ol>
+<li>Technical standards not specified</li>
+</ol>
+</li>
+<li>Authentication &amp; Network Security<ol>
+<li>RA/CA to be implemented under DigitalSky: completely unnecessary and increases complexity</li>
+</ol>
+</li>
+<li>Safety and Risk Assessment<ol>
+<li>SORA vs ICAO SMS<br />
+SMS maybe too generic for UA operations; UTM Policy should also include JARUS SORA</li>
+<li>Standard Scenarios<ol>
+<li>seem closer to business scenarios rather than operational scenarios</li>
+<li>operational limits/criteria not defined</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>ATM-UTM Integration<ol>
+<li>Technical standards<br />
+UFII-ATM-ANSP integration needs to be planned</li>
+</ol>
+</li>
+<li>UTM Business Rules: No implementable details on <ol>
+<li>Separation standards</li>
+<li>Terrain &amp; Obstacle clearance standards for<ol>
+<li>DAA</li>
+<li>UTM based service</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Deployment<ol>
+<li>Choice of Single-per-region/Multiple-per-region/Hybrid<br />
+We should policy favour maximum participants to foster innovation</li>
+</ol>
+</li>
+<li>Pricing models<br />
+    Only pricing models for UTMs to register themselves and manage particular airspaces should be specified; the pricing models for clients of UTM services should be market driven. Criteria for pricing UTM registration and operational fees charged by AAI/DGCA/etc. may include: list of services provided, airspace area under management, operations supported by UTM, etc.</li>
+</ol>
+</li>
+</ol>
 <h2 id="actors">Actors</h2>
 <ol>
 <li>Manufacturer</li>
@@ -173,7 +243,7 @@
 <li>Operator</li>
 <li>Insurer</li>
 <li>Civil Aviation Authority</li>
-<li>Service Consumer</li>
+<li>Data Consumer</li>
 <li>UAS Owner</li>
 <li>Law Enforcement</li>
 <li>Security Agencies</li>
@@ -183,6 +253,9 @@
 <li>BCAS</li>
 <li>General Public</li>
 <li>Other UTM-SP or instances thereof</li>
+<li>Pilot Certifier</li>
+<li>UAS Type Certifier</li>
+<li>UAS Testing Agency</li>
 </ol>
 <h2 id="use-cases">Use cases</h2>
 <h3 id="manufacturer">Manufacturer</h3>
@@ -220,11 +293,12 @@
 </ol>
 </li>
 </ol>
-<h3 id="service-consumer">Service Consumer</h3>
+<h3 id="data-consumer">Data Consumer</h3>
+<p>Consumer for data collected by a UAS during an operation.</p>
 <ol>
 <li>Data access</li>
 </ol>
-<h3 id="uas-owner">UAS Owner</h3>
+<h3 id="uas-ownership-etc">UAS Ownership, etc.</h3>
 <ol>
 <li>Lease</li>
 <li>Rent</li>
@@ -236,7 +310,7 @@
 <ol>
 <li>Find Pilot/Operator against FIR</li>
 <li>Track UAS</li>
-<li>Find rogue UAS</li>
+<li>Find Rogue UAS</li>
 <li>Counter UAS action</li>
 </ol>
 <h3 id="security-agencies">Security Agencies</h3>
@@ -259,6 +333,10 @@
 <p>i.e. IAF, Navy, Coast Guard, HAL</p>
 <ol>
 <li>Permission in applicable military controlled airspace</li>
+<li>Traffic Management<ol>
+<li>Deconfliction</li>
+</ol>
+</li>
 </ol>
 <h3 id="bcas">BCAS</h3>
 <ol>
@@ -269,15 +347,20 @@
 <li>Legal action against Drone Pilot/Operator</li>
 <li>Raise claim against accident</li>
 </ol>
-<h2 id="foreword-to-architecture">Foreword to Architecture</h2>
-<h3 id="state-of-the-art">State of the art</h3>
-<h4 id="gutma">GUTMA</h4>
-<h4 id="european-union-aviation-safety-agency">European Union Aviation Safety Agency</h4>
-<h5 id="u-space-specifications">U-Space Specifications</h5>
-<h4 id="federal-aviation-authority">Federal Aviation Authority</h4>
-<h5 id="utm-specification-v1">UTM Specification v1</h5>
-<h5 id="utm-specification-v2">UTM Specification v2</h5>
-<h5 id="unmanned-aerial-mobility-specification-v1">Unmanned Aerial Mobility Specification v1</h5>
+<h3 id="governmentsemi-governmental-bodies">Government/Semi-Governmental Bodies</h3>
+<ol>
+<li>UIDAI</li>
+<li>AERA</li>
+<li>DGFT</li>
+<li>CIN MCA/RoC</li>
+<li>GSTIN</li>
+<li>MoF</li>
+<li>QCI-CB</li>
+<li>Passport, VISA/OCI (MEA)</li>
+<li>WPC</li>
+<li>Driving License RTO</li>
+<li>Bharatkosh MoF</li>
+</ol>
 <h2 id="utm-architecture">UTM Architecture</h2>
 <h3 id="considerations-for-design">Considerations for design</h3>
 <h3 id="services">Services</h3>
