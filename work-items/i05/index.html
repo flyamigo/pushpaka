@@ -174,8 +174,8 @@ Version: <code>1</code>  </p>
 </ul>
 </li>
 <li><a href="#ecosystem-evolution-timeline">Ecosystem Evolution Timeline</a><ul>
-<li><a href="#phases">Phases</a></li>
-<li><a href="#expected-timeline">Expected Timeline</a></li>
+<li><a href="#phases-high-level">Phases (high level)</a></li>
+<li><a href="#phases-detail">Phases (detail)</a></li>
 </ul>
 </li>
 </ul>
@@ -407,7 +407,6 @@ We should policy favour maximum participants to foster innovation</li>
 <li>Airspace Organization and Management</li>
 <li>Mapping</li>
 <li>Restriction Management</li>
-<li>Registration</li>
 <li>Drone Swarm Management</li>
 <li>Drone Port Management</li>
 <li>Drone Corridor Management</li>
@@ -416,8 +415,6 @@ We should policy favour maximum participants to foster innovation</li>
 <li>Interface with ATC</li>
 </ol>
 <h2 id="rules-of-business">Rules of business</h2>
-<pre><code>Pre-emption / deconfliction
-</code></pre>
 <h3 id="high-priority-activities">High Priority activities</h3>
 <pre><code>923/2012 are:
 </code></pre>
@@ -432,192 +429,178 @@ We should policy favour maximum participants to foster innovation</li>
 <li>exemptions required to ensure the security of flights by heads of State, Ministers and comparable State functionaries</li>
 </ul>
 <h2 id="ecosystem-evolution-timeline">Ecosystem Evolution Timeline</h2>
-<h3 id="phases">Phases</h3>
+<h3 id="phases-high-level">Phases (high level)</h3>
 <table>
 <thead>
 <tr>
 <th>Phase</th>
-<th>Description</th>
+<th>Name</th>
+<th>Services</th>
+<th>Timeline</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td></td>
+<td>M0</td>
+<td>Registration, Restriction Management V0, Incident Reporting</td>
+<td>Till Feb 2022</td>
 </tr>
 <tr>
 <td>2</td>
-<td></td>
+<td>M1</td>
+<td>Communication and Navigation, Flight Awareness, Permission Management, Discovery, Airspace Authorisation, Messaging</td>
+<td>Feb 2022 - Feb 2023</td>
 </tr>
 <tr>
 <td>3</td>
-<td></td>
+<td>M2</td>
+<td>Flight Notification, Strategic Deconfliction, Conflict Advisory and Alert, Dynamic Airspace Density, Weather</td>
+<td>Feb 2023 - Feb 2024</td>
 </tr>
 <tr>
 <td>4</td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td></td>
-</tr>
-<tr>
-<td>7</td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td></td>
+<td>M3</td>
+<td>Emergency Management, Conformance Monitoring, Restriction Management V1, Log Management, Interface with ATC, Swarm Management, Corridor Management</td>
+<td>Feb 2024 - Feb 2025</td>
 </tr>
 </tbody>
 </table>
-<h3 id="expected-timeline">Expected Timeline</h3>
+<h3 id="phases-detail">Phases (detail)</h3>
 <table>
 <thead>
 <tr>
 <th>Phase</th>
-<th>Services</th>
-<th>Changes</th>
+<th>Service</th>
+<th>Description</th>
+<th>Timeline</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td>1</td>
+<td>Registration</td>
+<td>Pilot, Manufacturer Org., Training Org., Operator Org. registration and profile management</td>
+<td>Till Feb 2022</td>
+</tr>
+<tr>
+<td></td>
+<td>Restriction Management V0</td>
+<td>Airspace Rules</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
+<td></td>
+<td>Incident Reporting</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>2</td>
+<td>Communication and Navigation</td>
+<td></td>
+<td>Till Feb 2023</td>
+</tr>
+<tr>
+<td></td>
+<td>Flight Awareness</td>
+<td>Get info about flights in Volume of Interest</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
+<td></td>
+<td>Permission Management</td>
+<td>Allow UTMs to issue flight permits</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Discovery</td>
+<td>Allow UTMs to discover each other</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Airspace Authorisation</td>
+<td>Integration with Non-CAA authorities for seeking flight permission</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Messaging</td>
+<td>Allow Pilots/Ops to create/search TFR/NOTAM/UVR</td>
+<td></td>
+</tr>
+<tr>
 <td>3</td>
+<td>Flight Notification</td>
+<td>Get flights in AOI</td>
+<td>Till Feb 2024</td>
+</tr>
+<tr>
+<td></td>
+<td>Strategic Deconfliction</td>
+<td>Pre-flight deconfliction with issued flight plans based on volume restrictions and intersections</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
+<td></td>
+<td>Conflict Advisory and Alert</td>
+<td>Get constraints, advisory, directives for conflicts to aid pilot based deconfliction</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Airspace Density</td>
+<td>Get expected airspace density for volume of interest</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Weather</td>
+<td>Get wind, visibility, temperature, precipitation prediction for Flight</td>
+<td></td>
+</tr>
+<tr>
 <td>4</td>
+<td>Emergency Management</td>
+<td>UVR/NOTAM/TFR preemption rules</td>
+<td>Till Feb 2025</td>
+</tr>
+<tr>
+<td></td>
+<td>Conformance Monitoring</td>
+<td>Check Remote ID Tracking for conformance with buffers</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>5</td>
+<td></td>
+<td>Restriction Management V1</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>6</td>
+<td></td>
+<td>Swarm Management</td>
+<td>Allow UTMs to manage swarm coordination</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>7</td>
+<td></td>
+<td>Corridor Management</td>
+<td>Maintain Corridor geometries and operational constraints, allow UTMs to coordinate ops in corridors</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>8</td>
+<td></td>
+<td>Log Management</td>
+<td>Flight Log storage and analytics</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>9</td>
 <td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>10</td>
+<td>Interface with ATC</td>
 <td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>11</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>12</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>13</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>14</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>15</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>16</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>17</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>18</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>19</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>20</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>21</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>22</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>23</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>24</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>25</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>26</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>27</td>
 <td></td>
 </tr>
 </tbody>
